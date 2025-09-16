@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Логопедический центр Ритм речи в Пскове. Опытный логопед-дефектолог Ефимович Яна Алексеевна. Образование, методики работы, отзывы.">
+    <meta name="keywords" content="ритм речи центр, о логопедическом центре, логопед дефектолог Псков, методики коррекции речи">
+    <title>О логопедическом центре "Ритм речи" | Специалист | Методики</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon-192x192.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="img/favicon/favicon-96x96.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" sizes="180x180">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_about.css">
+</head>
+<body>
+    <div class="body-wraper">
+        <header class="header">
+            <div class="menu-overlay"></div>
+                <div class="header__burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu">
+                    <a href="index.html" class="menu__logo-link"></a>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="about.html" class="menu__link">О логопеде</a></li>
+                        <li class="menu__list-item"><a href="price.html" class="menu__link">Услуги и направления</a></li>
+                        <li class="menu__list-item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                    </ul>
+                    <button class="btn-record" onclick="showPopup()">Записаться</button>
+                </nav>
+        </header>
+    <main class="main">
+        <div class="main__content">
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <h1 class="about__title">Ефимович<br>Яна Алексеевна</h1>
+                        <div class="about__items">
+                            <div class="about__item-img img-desctop"></div>
+                            <div class="about__item">
+                                <p class="about__text">Здравствуйте! Я логопед-дефектолог с высшим образованием 
+                                    в области специального дефектологического образования и психологии.</p>
+                                <div class="about__btn">
+                                    <button class="help__dowload" onclick="openPdf('pdf/диплом1.pdf')">
+                                        Диплом дефектологического образования</button>
+                                    <button class="help__dowload" onclick="openPdf('pdf/диплом2.pdf')">Диплом по психологии</button>
+                                </div>
+
+                                <div class="about__item-img img-mobile"></div>
+                                <p class="about__text">Используя современные подходы и методики, я делаю занятия не только продуктивными, но и интересными для ребенка. Я верю, что каждый ребенок уникален, и поэтому подбираю индивидуальный подход, соответствующий его потребностям. Вместе мы добьемся прекрасных результатов и подготовим вашего малыша к успешному старту в школе.</p>
+                            </div>
+                        </div>
+                        <blockquote><b>Моя цель — помочь детям преодолеть речевые трудности и развить уверенное общение.</b>
+                            С нетерпением жду возможности познакомиться с вашим ребенком и совместно двигаться к целям!</blockquote>
+                    </div>
+                    <img src="img/shape/top/shape1.svg" loading="lazy" alt="" class="about_shape_first">
+                    <img src="img/shape/top/shape2.svg" loading="lazy" alt="" class="about_shape_second">
+                    <img src="img/shape/top/shape3.svg" loading="lazy" alt="" class="about_shape_third">
+        
+                    <img src="img/shape/top/буквы1.webp" loading="lazy" alt="" class="top_word-first">
+                    <img src="img/shape/top/буквы2.webp" loading="lazy" alt="" class="top_word-second">
+                </div>
+            </section>
+        
+            <div class="review-wrapper">
+                <img src="img/shape/background/shape_red.svg" alt="" class="background__img bg_shape1">
+                <section class="review">
+                    <div class="container">
+                        <div class="review__inner">
+                            <h1 class="review__title">Отзывы</h1>
+                            <div class="slider-container review-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <h4 class="slider__title">Кристина</h4>
+                                        <p class="review__text" >Пришли к Яне Алексеевне с проблемой отсутствия речи и в целом её понимания. 
+                                            Занимались 1 раз в неделю, ребенок 
+                                            с огромным удовольствием приходил 
+                                            на занятия, был полностью увлечен процессом. За 4 месяцев посещений произошел сдвиг, ребенок стал лучше понимать речь, начали появляться полноценные слоги, слова "да" и "нет". Очень довольны занятиями, 100% будем продолжать ходить!</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h4 class="slider__title">Александра</h4>
+                                        <p class="review__text" >Чудесный педагог Яна Алексеевна! 
+                                            Занималась с моей дочкой. Занимались дважды в неделю, через 3 месяца результат поразил. Занятия были очень комфортны и интересны. Дочь ждала встречи с педагогом! Яна Алексеевна, спасибо Вам огромное!!! Очень рада, что выбрала именно Вас! Вы замечательный педагог!</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h4 class="slider__title">Кристина</h4>
+                                        <p class="review__text">Хотим поблагодарить нашего логопеда Яну. 
+                                            Педагог, который, занимаясь с Вашим ребенком, демонстрирует внимательность, чуткость.
+                                            Ребенку очень нравятся занятия, а мне нравится 
+                                            их результат!Спасибо большое Яне за профессионализм 
+                                            и индивидуальный подход к моему ребенку!</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h4 class="slider__title">Валерия</h4>
+                                        <p class="review__text">Занимались с логопедом- дефектологом 6 месяцев. 
+                                            У сына были проблемы со звукоподражанием 
+                                            и пониманием речи. За это время произошел большой скачок. Хочу выразить большую благодарность Яне Алексеевне. Будем продолжать занятия в том же направлении.</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <h4 class="slider__title">Кристина</h4>
+                                        <p class="review__text">Выражаю благодарность замечательному педагогу Яне Алексеевне! Хочется отметить грамотный, индивидуальный подход к ребёнку, умение заинтересовать его в игровой форме. 
+                                            Занятие проходит интересно и весело, а самое главное, есть положительная тенденция в развитии ребёнка! После регулярных занятий с Яной Алексеевной у ребёнка появилось много новых слов и улучшилось понимание. Однозначно рекомендую. Спасибо большое!</p>
+                                    </div>
+                                </div>
+                                <div class="slider__button">
+                                    <button class="swiper-button-prev" type="button" aria-label="Посмотреть предыдущий слайд"><svg  width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29 13.5C29.8284 13.5 30.5 12.8284 30.5 12C30.5 11.1716 29.8284 10.5 29 10.5V13.5ZM0.939338 10.9393C0.353551 11.5251 0.353551 12.4749 0.939338 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807612 11.0711 0.807612 10.4853 1.3934L0.939338 10.9393ZM29 10.5L2 10.5V13.5L29 13.5V10.5Z" fill="#FB6D61"/>
+                                        </svg>
+                                        </button>
+                                    <button class="swiper-button-next" type="button" aria-label="Посмотреть следующий слайд">
+                                        <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM30.0607 13.0607C30.6464 12.4749 30.6464 11.5251 30.0607 10.9393L20.5147 1.3934C19.9289 0.807612 18.9792 0.807612 18.3934 1.3934C17.8076 1.97918 17.8076 2.92893 18.3934 3.51472L26.8787 12L18.3934 20.4853C17.8076 21.0711 17.8076 22.0208 18.3934 22.6066C18.9792 23.1924 19.9289 23.1924 20.5147 22.6066L30.0607 13.0607ZM2 13.5L29 13.5V10.5L2 10.5L2 13.5Z" fill="#FB6D61"/>
+                                            </svg>                                    
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/shape/white/shape1.svg" loading="lazy" alt="" class="shape_first">
+                        <img src="img/shape/white/shape2.svg" loading="lazy" alt="" class="shape_second">   
+                    </div>
+                </section>
+            </div>
+            
+        
+            <div class="form-wrapper">
+                <img src="img/shape/background/comp.svg" alt="" class="background__img bg_shape2">
+                <section class="section__form">
+                    <div class="container">
+                        <div class="form__inner">
+                            <h1 class="form__title">Запишитесь<br>прямо сейчас</h1>
+                            <h4 class="form__subtitle">Оставьте свои данные, и мы свяжемся с Вами!</h4>
+                            <form class="form" id="about__form">
+                                <div class="form__item">
+                                    <input class="input" type="text" name="name" placeholder="Ваше имя"></input>
+                                    <input class="input" type="text" name="phone" placeholder="Ваш номер"></input>
+                                    <div class="custom-select-wrapper">
+                                        <select id="price" name="price__name" class="custom-select">
+                                            <option selected>Выберите услугу:</option>
+                                            <option value="text">Запуск речи</option>
+                                            <option value="text">Коррекция звукопроизношения</option>
+                                            <option value="text">Коррекция задержек реч.развития</option>
+                                            <option value="text">Коррекция реч. недоразвития</option>
+                                            <option value="text">Подготовка к школе (с 5 лет)</option>
+                                        </select>
+                                    </div>
+                                    <input class="input input-comment" type="text" name="comment" placeholder="Комментарий"></input>
+                                </div>
+                                
+                                <div class="form__btn">
+                                    <button class="btn__send" type="submit">Отправить</button>
+                                    <p class="privice-confidential">Нажимая на кнопку, вы соглашаетесь с <a href="confidential.html" class="privice-confidential__link" target="_blank">политикой конфиденциальности</a></p>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <img src="img/shape/forma/shape3.svg" loading="lazy" alt="" class="shape_first">
+                        <img src="img/shape/forma/shape2.svg" loading="lazy" alt="" class="shape_second">  
+                    </div>
+                </section>
+            </div>
+            
+            <div id="popup-overlay">
+                <div id="popup">
+                    <div class="form__inner">
+                        <button onclick="hidePopup()" class="close__form"><svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28 16L16 28M16 16L28 28M42 22C42 33.0457 33.0457 42 22 42C10.9543 42 2 33.0457 2 22C2 10.9543 10.9543 2 22 2C33.0457 2 42 10.9543 42 22Z" stroke="#FB6D61" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <h1 class="form__title">Запишитесь<br>прямо сейчас</h1>
+                        <h4 class="form__subtitle">Оставьте свои данные, и мы свяжемся с Вами!</h4>
+                        <form class="form" id="about__popupform">
+                            <div class="form__item">
+                                <input class="input" type="text" name="name" placeholder="Ваше имя"></input>
+                                <input class="input" type="text" name="phone" placeholder="Ваш номер"></input>
+                                <div class="custom-select-wrapper">
+                                    <select id="price" name="price__name" class="custom-select">
+                                        <option selected>Выберите услугу:</option>
+                                        <option value="text">Запуск речи</option>
+                                        <option value="text">Коррекция звукопроизношения</option>
+                                        <option value="text">Коррекция задержек реч.развития</option>
+                                        <option value="text">Коррекция реч. недоразвития</option>
+                                        <option value="text">Подготовка к школе (с 5 лет)</option>
+                                    </select>
+                                </div>
+                                <input class="input input-comment" type="text" name="comment" placeholder="Комментарий"></input>
+                            </div>
+                            
+                            <div class="form__btn">
+                                <button class="btn__send" type="submit">Отправить</button>
+                                <p class="privice-confidential">Нажимая на кнопку, вы соглашаетесь с <a href="confidential.html" class="privice-confidential__link" target="_blank">политикой конфиденциальности</a></p>
+                            </div>
+                        </form>
+                    </div>
+                   
+                </div>
+        </div>
+    </main>
+
+    <div class="footer-wrapper">
+        <img src="img/shape/background/shape_red.svg" alt="" class="background__img bg_shape-footer">
+            <footer>
+                <div class="footer__inner">
+                    <a href="index.html" class="footer__logo-link"></a>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a href="about.html" class="footer__link">О логопеде</a></li>
+                        <li class="footer__nav-item"><a href="price.html" class="footer__link">Услуги и направления</a></li>
+                        <li class="footer__nav-item"><a href="contacts.html" class="footer__link">Контакты</a></li>
+                    </ul>
+
+                    <div class="footer__item">
+                        <button class="btn-record" onclick="showPopup()">Записаться</button>
+                        <a href="confidential.html" class="privice-confidential__link">политика<br>конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>  
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

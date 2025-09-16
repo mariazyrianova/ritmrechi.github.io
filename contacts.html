@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контактные данные логопедического центра Ритм речи в Пскове. Адрес: Площадь Ленина, 3. ☎ 8 999 167 16 73. График работы: Пн-Пт 9:00-18:00">
+    <meta name="keywords" content="ритм речи контакты, адрес логопеда Псков, запись к логопеду, телефон логопедического центра">
+    <title>Контакты центра "Ритм речи" | Запись к логопеду в Пскове</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon-192x192.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="img/favicon/favicon-96x96.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" sizes="180x180">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css//style_contacts.css">
+</head>
+<body>
+    <div class="body-wraper">
+        <header class="header">
+            <div class="menu-overlay"></div>
+                <div class="header__burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu">
+                    <a href="index.html" class="menu__logo-link"></a>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="about.html" class="menu__link">О логопеде</a></li>
+                        <li class="menu__list-item"><a href="price.html" class="menu__link" >Услуги и направления</a></li>
+                        <li class="menu__list-item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                    </ul>
+                    <button class="btn-record" onclick="showPopup()">Записаться</button>
+                </nav>
+        </header>
+    
+    <main class="main">
+        <div class="main__content">
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="contacts__items">
+                            <h1 class="сontacts__title">Контакты</h1>
+                            <p class="contacts__text">
+                                Если у вас есть интерес к моим услугам или вы хотите обсудить возможное сотрудничество, то всегда можете связаться со мной по указанному номеру. 
+                            </p>
+                            <div class="contacts__item">
+                                <a href="tel:+79991671673" class="contacts__phone"><img src="img/contacts/phone.svg" alt="" class="contacts__img-phone">8 999 167 16 73</a>
+                                <a href="https://wa.me/+79991671673" class="contacts__whatsapp"><img src="img/contacts/whatsapp.svg" alt="" class="contacts__img-whatsapp"></a>
+                                <a href="" class="contacts__adres"><img src="img/contacts/map.svg" alt="" class="contacts__img-map">г.Псков, Площадь Ленина 3</a>
+                            </div>
+                        </div>
+                        <div class="contacts__map" style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.ru/maps/25/pskov/?utm_medium=mapframe&utm_source=maps" 
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Псков</a>
+                            <a href="https://yandex.ru/maps/25/pskov/house/ploshchad_lenina_3/ZkEYdQRgTUYOQFttfXRweHpqZQ==/?ll=28.334537%2C57.818978&utm_medium=mapframe&utm_source=maps&z=16.69" 
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Площадь Ленина, 3 — Яндекс Карты</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=28.334537%2C57.818978&mode=whatshere&whatshere%5Bpoint%5D=28.330297%2C57.819725&whatshere%5Bzoom%5D=17&z=16.69"
+                            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-wrapper">
+                <img src="img/shape/background/comp.svg" alt="" class="background__img bg_shape1">
+                <section class="section__form">
+                    <div class="container">
+                        <div class="form__inner">
+                            <h1 class="form__title">Запишитесь<br>прямо сейчас</h1>
+                            <h4 class="form__subtitle">Оставьте свои данные, и мы свяжемся с Вами!</h4>
+                            <form class="form" id="contacts__form">
+                                <div class="form__item">
+                                    <input class="input" type="text" name="name" placeholder="Ваше имя"></input>
+                                    <input class="input" type="text" name="phone" placeholder="Ваш номер"></input>
+                                    <div class="custom-select-wrapper">
+                                        <select id="price" name="price__name" class="custom-select">
+                                            <option selected>Выберите услугу:</option>
+                                            <option value="text">Запуск речи</option>
+                                            <option value="text">Коррекция звукопроизношения</option>
+                                            <option value="text">Коррекция задержек реч.развития</option>
+                                            <option value="text">Коррекция реч. недоразвития</option>
+                                            <option value="text">Подготовка к школе (с 5 лет)</option>
+                                        </select>
+                                    </div>
+                                    <input class="input input-comment" type="text" name="comment" placeholder="Комментарий"></input>
+                                </div>
+                                
+                                <div class="form__btn">
+                                    <button class="btn__send" type="submit">Отправить</button>
+                                    <p class="privice-confidential">Нажимая на кнопку, вы соглашаетесь с <a href="confidential.html" class="privice-confidential__link" target="_blank">политикой конфиденциальности</a></p>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <img src="img/shape/forma/shape3.svg" loading="lazy" alt="" class="shape_first">
+                        <img src="img/shape/forma/shape2.svg" loading="lazy" alt="" class="shape_second">  
+                    </div>
+                </section>
+            </div>
+           
+            <div id="popup-overlay">
+                <div id="popup">
+                    <div class="form__inner">
+                        <button onclick="hidePopup()" class="close__form"><svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28 16L16 28M16 16L28 28M42 22C42 33.0457 33.0457 42 22 42C10.9543 42 2 33.0457 2 22C2 10.9543 10.9543 2 22 2C33.0457 2 42 10.9543 42 22Z" stroke="#FB6D61" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <h1 class="form__title">Запишитесь<br>прямо сейчас</h1>
+                        <h4 class="form__subtitle">Оставьте свои данные, и мы свяжемся с Вами!</h4>
+                        <form class="form" id="contacts__popupform">
+                            <div class="form__item">
+                                <input class="input" type="text" name="name" placeholder="Ваше имя"></input>
+                                <input class="input" type="text" name="phone" placeholder="Ваш номер"></input>
+                                <div class="custom-select-wrapper">
+                                    <select id="price" name="price__name" class="custom-select">
+                                        <option selected>Выберите услугу:</option>
+                                        <option value="text">Запуск речи</option>
+                                        <option value="text">Коррекция звукопроизношения</option>
+                                        <option value="text">Коррекция задержек реч.развития</option>
+                                        <option value="text">Коррекция реч. недоразвития</option>
+                                        <option value="text">Подготовка к школе (с 5 лет)</option>
+                                    </select>
+                                </div>
+                                <input class="input input-comment" type="text" name="comment" placeholder="Комментарий"></input>
+                            </div>
+                            
+                            <div class="form__btn">
+                                <button class="btn__send" type="submit">Отправить</button>
+                                <p class="privice-confidential">Нажимая на кнопку, вы соглашаетесь с <a href="confidential.html" class="privice-confidential__link" target="_blank">политикой конфиденциальности</a></p>
+                            </div>
+                        </form>
+                    </div>
+                   
+                </div>
+        </div>
+       
+    </main>
+    
+    <div class="footer-wrapper">
+        <img src="img/shape/background/shape_red.svg" alt="" class="background__img bg_shape-footer">
+            <footer>
+                <div class="footer__inner">
+                    <a href="index.html" class="footer__logo-link"></a>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a href="about.html" class="footer__link">О логопеде</a></li>
+                        <li class="footer__nav-item"><a href="price.html" class="footer__link">Услуги и направления</a></li>
+                        <li class="footer__nav-item"><a href="contacts.html" class="footer__link">Контакты</a></li>
+                    </ul>
+        
+                    <div class="footer__item">
+                        <button class="btn-record" onclick="showPopup()">Записаться</button>
+                        <a href="confidential.html" class="privice-confidential__link">политика конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+   
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
