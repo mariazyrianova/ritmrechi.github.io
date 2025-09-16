@@ -1,0 +1,272 @@
+h1{
+    margin-bottom: 40px;
+}
+
+.contacts {
+  border-color: #9bc4f8;
+  background-color: #fcf9e8;
+  color: #619ce7;
+  margin-top: 20px;
+}
+
+.contacts__items{
+    max-width: 642px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.contacts__phone {
+  flex: 1; 
+  display: flex;
+  justify-content: start;
+  padding-left: 40px;
+  width: 100%;
+}
+.contacts__whatsapp {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+}
+
+.contacts__adres {
+  display: flex;
+  justify-content: start;
+  padding-left: 40px;
+  flex-basis: 100%;
+}
+
+.contacts__item a {
+  gap: 30px;
+  background-color: #fcf9e8;
+  border: 4px solid #9bc4f8;
+  color: #619ce7;
+  border-radius: 20px;
+  height: 90px;
+}
+
+.contacts__item a:hover{
+  color: #FB6D61;
+}
+
+.contacts__item a:active{
+  color: #ffbe45;
+}
+
+.contacts__map {
+  background-color: #fcf9e8;
+  border: 4px solid #9bc4f8;
+  border-radius: 20px;
+}
+
+.contacts__map iframe{
+    width: 640px;
+    height: 100%;
+    border: none;
+}
+
+.section__form {
+  border-color: #ffd382;
+  color: #ffbe45;
+}
+
+input {
+  color: #ffbe45;
+  background-color: #fcf9e8;
+  border: 4px solid #ffd382;
+}
+
+input:hover {
+  border: 4px solid #ffbe45;
+}
+
+input:focus,
+select:focus {
+  border: none;
+  border: 4px solid #ffbe45;
+  outline: none;
+}
+
+input:checked {
+  border: 4px solid #ffbe45;
+}
+
+input::placeholder {
+  color: #ffbe45;
+}
+
+select {
+  background-color: #fcf9e8;
+  color: #ffbe45;
+  border: 4px solid #ffd382;
+}
+
+.custom-select-wrapper::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' viewBox='0 0 21 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L11 10L19 2' stroke='%23FFBE45' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* Стили для option */
+.custom-select option {
+  background-color: #fcf9e8;
+  color: #ffbe45;
+}
+
+.btn__send {
+  background-color: #ffd382;
+  color: #fcf9e8;
+  border: 4px solid #ffd382;
+}
+
+.btn__send:hover {
+  background-color: #fcf9e8;
+  color: #ffbe45;
+}
+
+.btn__send:active {
+  background-color: #ffd382;
+  color: #fcf9e8;
+}
+
+.privice-confidential{
+  color: #ffbe45;
+}
+
+.privice-confidential__link {
+  color: #ffbe45;
+}
+
+.privice-confidential__link::after {
+  background-color: #ffbe45;
+  color: #ffbe45;
+}
+
+.bg_shape1 {
+  top: -35%;
+  right: 10%;
+  height: 400px;
+}
+
+@media (max-width: 1650px) {
+input {
+  border: 3px solid #ffd382;
+}
+
+input:hover {
+  border: 3px solid #ffbe45;
+}
+
+input:focus,
+select:focus {
+  border: 3px solid #ffbe45;
+
+}
+
+input:checked {
+  border: 3px solid #ffbe45;
+}
+
+select {
+  border: 3px solid #ffd382;
+}
+}
+
+@media (max-width: 900px) {
+  .contacts__inner{
+    display: block;
+  }
+
+  .contacts__item{
+    margin-top: 40px;
+  }
+
+  .contacts__map{
+    margin-top: 60px;
+    width: 100%;
+    height: 360px;
+  }
+  
+  .contacts__map iframe{
+    width: 100%;
+  }
+   input {
+  border: 2px solid #ffd382;
+}
+
+input:hover {
+  border: 2px solid #ffbe45;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #ffbe45;
+
+}
+
+input:checked {
+  border: 2px solid #ffbe45;
+}
+
+select {
+  border: 2px solid #ffd382;
+}
+}
+
+@media (max-width: 550px) {
+  .contacts__item{
+    gap: 10px;
+  }
+
+  .contacts__item a{
+    gap: 12px;
+    height: 80px;
+    border: 2px solid #9bc4f8;
+  }
+  .contacts__phone{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .contacts__adres{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .contacts__whatsapp{
+    width: 80px;
+  }
+
+  .contacts__img-phone, .contacts__img-whatsapp, .contacts__img-map{
+    width: 31px;
+    height: auto;
+  }
+
+  
+}
+
+@media (max-width: 350px) {
+
+   .contacts__item a{
+    gap: 10px;
+  }
+  .contacts__phone{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .contacts__adres{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+}

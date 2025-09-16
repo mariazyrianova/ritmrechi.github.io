@@ -1,0 +1,52 @@
+h3 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.confidential {
+  border-color: #9bc4f8;
+  margin-top: 20px;
+  color: #619ce7;
+  background-color: #fcf9e8;
+}
+
+.confidential__text {
+  width: 100%;
+  min-height: 100%;
+  padding-right: 20px;
+  counter-reset: h4-counter;
+}
+
+.confidential__item::-webkit-scrollbar {
+  display: none;
+}
+
+.text__item {
+  margin-bottom: 40px;
+}
+
+.confidential__text h4 {
+  counter-increment: h4-counter; /* Увеличение счетчика для h4 */
+}
+
+.confidential__text h4::before {
+  content: counter(h4-counter) "."; /* Нумерация для h4 */
+  left: 0;
+  font-weight: bold;
+  color: #619ce7;
+}
+
+
+@media (max-width: 800px) {
+  h3 {
+    margin-bottom: 40px;
+  }
+
+}
